@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: appear 0.5s forwards ease-in-out;
+}
+
+.closeLogin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: disappear 0.5s forwards ease-in-out;
+}
+.x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  background-color: transparent;
+}
+
+@keyframes appear {
+  from {
+    transform: translate(-50%, -50%) translateX(1500px);
+  }
+  to {
+    transform: translate(-50%, -50%) translateX(0);
+  }
+}
+@keyframes disappear {
+  from {
+    transform: translate(-50%, -50%) translateX(0);
+  }
+  to {
+    transform: translate(-50%, -50%) translateX(-2500px);
+  }
+}
+
+#login h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: clamp(0.75rem, 2vw, 2rem);
+}
+
+#login h2 {
+  text-align: center;
+  font-size: clamp(0.65rem, 2vw, 1.5rem);
+}
+
+#login p {
+  font-size: clamp(0.5rem, 3vw, 14px);
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+#login a {
+  color: #333;
+  font-size: clamp(0.5rem, 3vw, 14px);
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+#login form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+#login input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: var(--radius-xs);
+}
+
+.formContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.formError {
+  position: absolute;
+  width: 70%;
+  bottom: 40px;
+  color: #d33;
+  margin-top: 6px;
+  display: block;
+}
+#overlayBlur {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  z-index: 3;
+}
+
+#overlayBlur.active {
+  opacity: 1;
+  pointer-events: all;
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 550px) {
+  .loginForm .fileForm input {
+    height: 20px;
+    font-size: 10px;
+  }
+  .loginForm .fileForm input::placeholder {
+    font-size: 10px;
+  }
+}

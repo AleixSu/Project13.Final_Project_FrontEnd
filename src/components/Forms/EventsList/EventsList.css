@@ -1,0 +1,55 @@
+.eventsListDiv {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.loadingText,
+.error-text {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.errorText {
+  color: #dc3545;
+}
+
+.noEventsMessage {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.noEventsMessage p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.eventsCount {
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--color-separator);
+}
+
+.eventsCount h5 {
+  margin-bottom: 1rem;
+  padding-left: 15px;
+  font-size: 8;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.eventsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .eventsGrid {
+    grid-template-columns: 1fr;
+  }
+}

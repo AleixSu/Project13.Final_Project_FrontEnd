@@ -1,0 +1,29 @@
+#filterBox {
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+#filterBox h5 {
+  margin-bottom: 1rem;
+  padding-left: 15px;
+  font-size: 8;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+#filterLocationDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  margin-top: 0;
+}
+
+.filter-button {
+  font-size: clamp(0.5rem, 1vw, var(--font-size-xs));
+  margin: 10px 0;
+  transition: var(--transition-normal);
+}
+
+.filter-button.active {
+  background-color: var(--color-button-pressed);
+}

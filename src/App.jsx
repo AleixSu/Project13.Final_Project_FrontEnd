@@ -1,0 +1,20 @@
+import { Outlet } from 'react-router-dom'
+import './App.css'
+import { useModalContext } from './context/ModalContext'
+import LoginRegister from './pages/loginRegister/LoginRegister'
+import Header from './components/Layout/header/Header'
+
+function App() {
+  const { isLoginOpen } = useModalContext()
+  return (
+    <div>
+      <Header />
+      <main>
+        <Outlet />
+        {isLoginOpen ? <LoginRegister /> : null}
+      </main>
+    </div>
+  )
+}
+
+export default App

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './EventsList.css'
 import { API } from '../../../utils/api/api'
 import { useFilter } from '../../../context/FilterContext'
-import EventCard from '../../UI/card/eventCard/eventCard'
+import EventCard from '../../UI/card/eventCard/EventCard'
 
 const EventsList = () => {
   const [events, setEvents] = useState([])

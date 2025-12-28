@@ -1,5 +1,5 @@
 import LocationsList from '../../components/Forms/LocationList/LocationsList'
-import Banner from '../../components/Layout/banner/banner'
+import Banner from '../../components/Layout/banner/Banner'
 import { locationsSrc } from '../../constants/locationConstants'
 
 import './Location.css'

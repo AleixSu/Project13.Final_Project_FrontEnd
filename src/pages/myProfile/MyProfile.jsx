@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../../components/Layout/banner/banner'
+import Banner from '../../components/Layout/banner/Banner'
 import { myProfileSrc } from '../../constants/myProfileConstants'
 import './MyProfile.css'
 import UpdateInfoProfile from '../../components/Forms/updateInfoProfile/UpdateInfoProfile'

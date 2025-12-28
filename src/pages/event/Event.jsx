@@ -1,7 +1,7 @@
 import EventsList from '../../components/Forms/EventsList/EventsList'
 import FilterBox from '../../components/Forms/filterBox/FilterBox'
 import SearchBox from '../../components/Forms/searchBox/searchBox'
-import Banner from '../../components/Layout/banner/banner'
+import Banner from '../../components/Layout/banner/Banner'
 import { locationsSrc } from '../../constants/locationConstants'
 import './event.css'
 import React from 'react'

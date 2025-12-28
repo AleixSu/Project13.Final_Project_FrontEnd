@@ -3,7 +3,7 @@ import FilterBox from '../../components/Forms/filterBox/FilterBox'
 import SearchBox from '../../components/Forms/searchBox/SearchBox'
 import Banner from '../../components/Layout/banner/Banner'
 import { locationsSrc } from '../../constants/locationConstants'
-import './event.css'
+import './Event.css'
 import React from 'react'
 
 const Event = () => {
